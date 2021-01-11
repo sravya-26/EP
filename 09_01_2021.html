@@ -1,0 +1,247 @@
+<!--Program 42:onsubmit event(input text feild-name shouldnt be empty)
+	
+<html>
+<head>
+<title>Events</title>
+<script>
+
+function valid()
+{
+  var name = document.f.fname.value;
+  //if(name=="")
+  if(name.length==0)
+  {
+  	alert("Name cannot be empty!")
+  	return false;
+  }
+}
+</script>
+</head>
+<body>
+<form name="f" onsubmit="return valid()" action="success.html" method="post">
+Enter Name<input type="text" name="fname"><br><br>
+<input type="submit" value="submit">
+
+</form>
+
+</body>
+</html>-->
+
+<!--Program 43:onsubmit event(input text feild-name shouldnt be empty-showing message using id)
+	
+<html>
+<head>
+<title>Events</title>
+<script>
+
+function valid()
+{
+  var name = document.f.fname.value;
+  //if(name=="")
+  if(name.length==0)
+  {
+  	document.getElementById('errname').innerHTML="You must Enter Your Name"
+  	return false;
+  }
+}
+</script>
+</head>
+<body>
+<form name="f" onsubmit="return valid()" action="success.html" method="post">
+Enter Name<input type="text" name="fname"><i id="errname" style="color: red"></i><br><br>
+<input type="submit" value="submit">
+
+</form>
+
+</body>
+</html>-->
+
+<!--Program 44:onfocus and onblur events(hyperlink)
+<html>
+<head>
+<title>Events</title>
+<style>
+	a:focus,a:active
+	{
+		color: green;
+	}
+</style>
+<script>
+function focustxt(){
+	document.getElementById("txt").focus()
+}
+function blurtxt(){
+	document.getElementById("txt").blur()
+}
+</script>
+</head>
+<body>
+<a href="https://www.kluniversity.in/" id="txt">K L University</a><br><br>
+<button onclick="focustxt()">FOCUS</button>&nbsp;&nbsp;&nbsp;
+<button onclick="blurtxt()">BLUR</button>
+</body>
+</html>-->
+
+
+<!--Program 44:to accept terms and conditions(checkbox)
+	
+<html>
+<head>
+<title>Events</title>
+<script>
+function valid(){
+	if(!document.f.terms.checked){
+		alert("You Must Accept Terms and Conditions")
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+<form name="f" onsubmit="return valid()" action="success.html" method="post">
+<input type="checkbox" name="terms">I Accept Terms and Conditions
+<br><br>
+<input type="submit" value="submit">
+
+</form>
+</body>
+</html>-->
+
+
+<!--Program 46:to demonstrate onsubmit event(using select tag)
+	
+<html>
+<head>
+<title>Events</title>
+<script>
+function valid(){
+	var dept = document.f.dept.value;
+	if(dept=="")
+	{
+		alert("Select Department");
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+<form name="f" onsubmit="return valid()" action="success.html" method="post">
+<select name="dept">
+<option value="">--SELECT--</option>
+<option value="CSE">CSE</option>
+<option value="ECE">ECE</option>
+<option value="ME">ME</option>
+</select>
+<br><br>
+<input type="submit" value="submit">
+
+</form>
+</body>
+</html>-->
+
+
+
+<!--Program 47:to demonstrate onchange event(using select tag)
+	
+<html>
+<head>
+<title>Events</title>
+<script>
+function valid(){
+	var dept = document.f.dept.value;
+	if(dept=="")
+	{
+		alert("Select Department");
+		return false;
+	}
+}
+function display()
+{
+	var dept = document.f.dept.value;
+	if(dept.length!=""){
+		alert("You have selected "+dept+" Department");
+	}
+	else{
+		alert("You didnt select department");
+	}
+}
+</script>
+</head>
+<body>
+<form name="f" onchange ="return valid()" action="success.html" method="post">
+<select name="dept">
+<option value="">--SELECT--</option>
+<option value="CSE">CSE</option>
+<option value="ECE">ECE</option>
+<option value="ME">ME</option>
+</select>
+<br><br>
+<input type="submit" value="submit">
+
+</form>
+</body>
+</html>-->
+
+<!--Program 48:window.location(confirm dialogue box)
+<html>
+<head>
+<title>Events</title>
+<script>
+if(confirm("You sure wanna leave?"))
+{
+	//alert("YES");
+	//window.location="about.html"
+	//window.location.replace("success.html");
+	window.location="https://www.kluniversity.in/"
+}
+else
+{
+	//alert("NO");
+	window.location="login.html"
+}
+</script>
+</head>
+<body>
+</body>
+</html>-->
+
+<!--Program 49:onmouseover() and onmouseout(with image tag)
+<html>
+<head>
+<title>Events</title>
+<script>
+function changeimg1(){
+document.getElementById("demo").src="sad.png"
+
+}
+function changeimg2(){
+document.getElementById("demo").src="happy.jpg"
+}
+</script>
+</head>
+<body>
+	<img src="happy.jpg" id="demo" onmouseover="changeimg1()" onmouseout="changeimg2()" width="200px" height="200px">
+</body>
+</html>-->
+
+<!--Program 50:window.print-->
+<html>
+<head>
+<title>Events</title>
+<script>
+function demo(){
+window.print()
+}
+</script>
+</head>
+<body>
+	 <p>
+K L University, officially K L Deemed to be University, formerly K L College of Engineering and Koneru Lakshmaiah Education Foundation, is an higher educational institution Deemed to be University, located near Vijayawada, Andhra Pradesh, India
+  </p>
+
+  <br><br>
+  <button onclick="demo()">Print</button>
+</body>
+</html>
+
+

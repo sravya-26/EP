@@ -1,0 +1,29 @@
+heading{
+	background-color: yellow;
+	font-weight: bold;
+	font-size: 40px;
+}
+employees{
+	background-color: lightblue;
+}
+employee:before{
+	content: attr(gender)  ' ' attr(location);
+	content: red;
+	font-size: 30px;
+	display: block;
+}
+id
+{
+	font-size: 25px;
+	color:blue;
+	background-color: grey;
+}
+name,qualification,designation,profession
+{
+	font-size: 25px;
+	display: block;
+}
+designation
+{
+	font-style:italic; 
+}

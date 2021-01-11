@@ -1,0 +1,91 @@
+/*heading{
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  class{
+    background-color: lightblue;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  student{
+    background-color: lightblue;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  id
+  {
+    font-size: 25px;
+    color:blue;
+    background-color: grey;
+    display: block;
+  }
+  name, branch
+  {
+    font-size: 25px;
+    display: block;
+  }
+  cgpa
+  {
+    font-style:italic; 
+    display: block;
+  }*/
+
+  heading{
+    background-color: white;
+    font-weight: bold;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+  }
+  books{
+    background-color: orange;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  book{
+    /*background-color: lightblue;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+    display: block;*/
+    display: block;
+    color: green;
+    width: 250px;
+    height: 300px;
+    background-color: lavender;
+    /*border: 5px solid black;*/
+    border: 5px black;
+    padding:5px;
+    margin: 20px;
+    float: left;
+  }
+  title
+  {
+    font-size: 25px;
+    color:blue;
+    background-color: salmon;
+    display: block;
+  }
+  author, publisher, edition, price, genre
+  {
+    font-style:italic;
+    font-size: 25px;
+    display: block;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		/*Program18:to display table
+		var n;
+		n = parseInt(prompt("Enter value to print table",2))
+		document.writeln("<table border='1' bgcolor='blue'>")
+		for(i=1;i<=10;i++)
+		{
+			//document.writeln(n+" * "+i+" = "+(n*i)+"<br>")
+
+			//using table tags
+			document.writeln("<tr><td>"+n+" * "+i+" = "+(n*i)+"</td></tr>")
+						
+		}
+		document.writeln("</table>") */
+
+		/*============================*/
+		/*Program19:read and display array elements
+		var a = new Array();
+		var n;
+		n = parseInt(prompt("Enter Array Size",3))
+		for(i=0;i<n;i++)
+		{
+			a[i] = parseInt(prompt("Enter Array value"))
+		}
+
+		for(i=0;i<n;i++)
+		{
+			document.writeln(a[i]+"<br>");
+		}*/
+
+		/*================================*/
+		/*Program 20:sum and avg of 1d
+		var a = new Array();
+		var n,sum=0,avg=0;
+		n = parseInt(prompt("Enter Array Size",3))
+		for(i=0;i<n;i++)
+		{
+			a[i] = parseInt(prompt("Enter Array value"))
+			document.writeln("<br>"+a[i]+"</br>");
+		}
+
+		for(i=0;i<n;i++)
+		{
+			sum=sum+a[i]
+		}
+		avg=sum/n
+		document.writeln("<marquee>"+"sum is "+sum+"</marquee>");
+		document.writeln("<marquee>"+"average is "+avg+"</marquee>");*/
+
+		/*==================================*/
+		/*Program21:read and display 2d arrays
+		var a = new Array(2);//creation of rows
+
+		for(i=0;i<2;i++)
+		{
+			a[i] = new Array();
+		}
+
+		for(i=0;i<2;i++)
+		{
+			for(j=0;j<2;j++)
+			{
+				a[i][j] = parseInt(prompt("Enter matrix element: "),0)
+			}
+		}
+		for(i=0;i<2;i++)
+		{
+			for(j=0;j<2;j++)
+			{
+				document.writeln(a[i][j]+" ")
+			}
+			document.writeln("<br>")
+		}*/
+
+
+		/*==========================*/
+		/*Program22Addition and subtraction of 2d matrix*/
+		/*var a = new Array(2); // creation of rows
+		for (i = 0; i < 2; i++) {
+  			a[i] = new Array();
+ 		}
+		alert("Reading First Matrix")
+		for (i = 0; i < 2; i++) {
+  			for (j = 0; j < 2; j++) {
+    			a[i][j] = parseInt(prompt("Enter Matrix Element", 0))
+  			}
+		}
+
+		var b = new Array(2); // creation of rows
+		for (i = 0; i < 2; i++) {
+  				b[i] = new Array();
+		}
+		alert("Reading Second Matrix")
+		for (i = 0; i < 2; i++) {
+  			for (j = 0; j < 2; j++) {
+    			b[i][j] = parseInt(prompt("Enter Matrix Element", 0))
+  			}
+		}
+		document.writeln("The First Matrix is<br>")
+
+		for (i = 0; i < 2; i++) {
+  			for (j = 0; j < 2; j++) {
+    			document.writeln(a[i][j] + " ")
+  			}
+  			document.writeln("<br>")
+		}
+
+		document.writeln("The Second Matrix is<br>")
+
+		for (i = 0; i < 2; i++) {
+  			for (j = 0; j < 2; j++) {
+    			document.writeln(b[i][j] + " ")
+  			}
+  			document.writeln("<br>")
+		}
+
+		document.writeln("Addition of Two Matrices<br>")
+
+		for (i = 0; i < 2; i++) {
+  			for (j = 0; j < 2; j++) {
+    			document.writeln(a[i][j] + b[i][j] + " ")
+  			}
+  			document.writeln("<br>")
+		}
+
+
+		document.writeln("Subtraction of Two Matrices<br>")
+
+		for (i = 0; i < 2; i++) {
+  			for (j = 0; j < 2; j++) {
+    			document.writeln(a[i][j] - b[i][j] + " ")
+  			}
+ 			 document.writeln("<br>")
+		}*/
+
+	/*=============================*/
+	/*proram:23 transpose of a matrix
+	var a = new Array(2); // creation of rows
+	for (i = 0; i < 2; i++) {
+  		a[i] = new Array();
+	}
+	for (i = 0; i < 2; i++) {
+  		for (j = 0; j < 2; j++) {
+    		a[i][j] = parseInt(prompt("Enter Matrix Element", 0))
+  		}
+	}
+
+	document.writeln("The Matrix is<br>")
+
+	for (i = 0; i < 2; i++) {
+ 		 for (j = 0; j < 2; j++) {
+    		document.writeln(a[i][j] + " ")
+  		}
+  	document.writeln("<br>")
+	}
+
+	document.writeln("The Transpose Matrix is<br>")
+	for (i = 0; i < 2; i++) {
+  		for (j = 0; j < 2; j++) {
+    		document.writeln(a[j][i] + " ")
+  		}
+  		document.writeln("<br>")
+	}*/
+
+	/*=======================*/
+	/*Program24:Trace of a matrix
+	var sum = 0;
+	var a = new Array(2); // creation of rows
+	for (i = 0; i < 2; i++) {
+ 		 a[i] = new Array();
+	}
+	for (i = 0; i < 2; i++) {
+  		for (j = 0; j < 2; j++) {
+    		a[i][j] = parseInt(prompt("Enter Matrix Element", 0))
+  		}
+	}
+
+	document.writeln("The Matrix is<br>")
+
+	for (i = 0; i < 2; i++) {
+  		for (j = 0; j < 2; j++) {
+    		document.writeln(a[i][j] + " ")
+  		}
+  		document.writeln("<br>")
+	}
+	for(i=0;i<2;i++)
+	{
+  		for(j=0;j<2;j++)
+  		{
+    		if(i==j)
+    		{
+      			sum = sum + a[i][j]
+    		}
+  		}
+  
+	}
+
+	document.writeln("Trace of a given matrix="+sum)*/
+
+
+/*=======================================*/
+	/*Program25:Function calling other function
+	//function with no arguments and no return type
+	function add(){
+		x=10,y=20
+		document.writeln(x+y)
+	}
+	add() //function call
+
+	//function with  arguments and no return type
+	function add(x,y){
+		document.writeln(x+y)
+	}
+	add(10,20) //function call
+
+	//function with no arguments and  return type
+	function add(){
+		x=10,y=20
+		return x+y
+	}
+	document.writeln(add()) //function call
+
+
+	// function with arguments and return value
+	function add(x,y)
+	{
+  		 return x+y
+	}
+	a=10,b=20
+	document.writeln(add(a,b))*/
+
+
+	/*================================*/
+	/*Program26:To find factorial of a given number using Recursive function*/
+	function fact(n)
+	{
+		if(n==0)
+			return 1;
+		else
+			return n*fact(n-1)
+	}
+	var x = parseInt(prompt("Enter value",2))
+	document.writeln("Factorial of "+x+"="+fact(x))
+
+	/*27. JavaScript program to find fibinocci of a given number using Recursive function
+	function fib(n)
+	{
+		if(n==0 || n==1)
+			return n;
+		else
+			return fib(n-1)+fact(n-2)
+	}
+	var x = parseInt(prompt("Enter value",2))
+	document.writeln("Fib of "+x+"="+fib(x))*/
+
+	</script>
+}
+</head>
+</html>

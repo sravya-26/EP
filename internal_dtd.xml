@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<!DOCTYPE employees[
+<!ELEMENT employees(employee)>
+<!ELEMENT employee (id,name,qualification,designation)>
+<!ELEMENT id(#PCDATA)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT qualification(#PCDATA)>
+<!ELEMENT designation(#PCDATA)>
+<!ENTITY KLU "KLUNIVERSITY">
+<!--ATTLIST employee gender CDATA #IMPLIED-->
+<!--ATTLIST employee gender CDATA #REQUIRED-->
+<!--ATTLIST employee gender CDATA #FIXED "male"-->
+<!ATTLIST employee gender (male|female) "male">
+]>
+<employees>
+  <employee gender="female">
+    <id>&quot;190031539&quot;</id>
+    <name>&Sravya;</name>
+    <qualification>B.Tech</qualification>
+    <profession>Student</profession>
+  </employee>
+</employees>

@@ -1,0 +1,200 @@
+<!--Program 31:onclick event(input:button)
+<html>
+<head>
+	<title>Event Programs</title>
+<script>
+	function display(){
+		alert("button is clicked !!")
+	}
+</script>
+</head>
+<body>
+ <input type="button" value="Click Here" onclick="display()">
+</body>
+</html>-->
+
+<!--Program 32:onclick event(input:radio)
+<html>
+<head>
+	<title>Event Programs</title>
+<script>
+	function display(obj)
+	{
+		alert("You selected "+(obj.value)+"Color");
+	}
+</script>
+</head>
+<body>
+ Red <input type="radio" name="color" value="red" onclick=display(this)><br>
+ Green <input type="radio" name="color" value="green" onclick=display(this)><br>
+ Blue <input type="radio" name="color" value="blue" onclick=display(this)><br>
+</body>
+</html>-->
+
+<!--Program 33:onclick this innerHTML with onclick event - 1st way
+<html>
+<head>
+	<title>Event Programs</title>
+<script>
+	function changetext(txt)
+	{
+		txt.innerHTML = " K L University"
+	}
+</script>
+</head>
+<body>
+<h1 onclick="changetext(this)">KLU, Click on this text to change</h1>
+</body>
+</html>-->
+
+<!--Program 34:onclick this innerHTML with onclick event - 2nd way
+<html>
+<head>
+	<title>Event Programs</title>
+<script>
+</script>
+</head>
+<body>
+<h1 onclick="this.innerHTML='K L Deemed to be University'">KLU, Click on this text to change</h1>
+</body>
+</html>-->
+
+<!--Program 35:onclick and getElementById
+<html>
+<head>
+	<title>Event Programs</title>
+<script>
+	function display()
+    {
+      alert(document.getElementById("fname").value)
+    }
+</script>
+</head>
+<body>
+Enter Full Name<input type="text" name="fname" id="fname"><br><br>
+<input type="button" value="Click Here" onclick="display()"><br><br>
+</body>
+</html>-->
+
+<!--Program 36:onclick(change the background color)
+<html>
+<head>
+	<title>Event Programs</title>
+<script>
+function changebgcolor()
+{
+	var clr = document.getElementById('color').value
+	//alert(clr)
+	document.body.style.backgroundColor = clr;
+}
+</script>
+</head>
+<body>
+Enter Color<input type="text" name="color" id="color"><br><br>
+<input type="button" value="Change" onclick="changebgcolor()">
+</body>
+</html>-->
+
+<!--Program 37:onclick(change the text color)
+<html>
+<head>
+	<title>Event Programs</title>
+<script>
+function changetxtcolor()
+{
+	var clr = document.getElementById('color').value
+	//alert(clr)
+	document.getElementById('txt').style.color = clr;
+}
+</script>
+</head>
+<body>
+	<h3 id="txt">K L University</h3>
+Enter Color<input type="text" name="color" id="color"><br><br>
+<input type="button" value="Change" onclick="changetxtcolor()">
+</body>
+</html>-->
+
+<!--Program 38:onclick onmouseover and onmouseout
+<html>
+<head>
+	<title>Event Programs</title>
+<script>
+function changebgcolor(clr)
+{
+	
+	document.getElementById('x').style.color = clr;
+}
+</script>
+</head>
+<body>
+	<table align="center" width="40%" height=20% border="3">
+		<tr align="center">
+			<td bgcolor="red" onmouseover="changebgcolor('red')" onmouseout="changebgcolor('black')">KLU</td>
+			<td bgcolor="green" onmouseover="changebgcolor('green')" onmouseout="changebgcolor('black')">SRM</td>
+			<td bgcolor="violet" onmouseover="changebgcolor('violet')" onmouseout="changebgcolor('black')">VIT</td>
+		</tr>
+	</table>
+	<br><br>
+	<h3 id='x' align="center">Enterprise Programming</h3>
+</body>
+</html>-->
+
+<!--Program 39:onchange event
+<html>
+<head>
+<title>Javascript events</title>
+<script>
+ function changetxt()
+ {
+  var x=document.getElementById("fname")
+        x.value=x.value.toUpperCase()
+ }
+ 
+</script>
+<body>
+ Enter your name<input type="text" id="fname" onchange="changetxt()">
+</body>
+</head>
+</html>-->
+
+<!--Program 40:onkeyup and onkeydown
+<html>
+<head>
+<title>Javascript events</title>
+<script>
+ function changetxt()
+ {
+        var x=document.getElementById("fname")
+        x.value=x.value.toUpperCase()
+ }
+ 
+</script>
+<body>
+ Enter your name<input type="text" id="fname" onkeyup="changetxt()">
+</body>
+</head>
+</html>-->
+
+<!--Program 41:onsubmit event(input text feild-showing message using alert)
+<html>
+<head>
+<title>Events</title>
+<script>
+
+function valid()
+{
+  alert(document.f.fname.value)
+  return false;
+}
+</script>
+</head>
+<body>
+<form name="f" onsubmit="return valid()" action="success.html">
+Enter Name<input type="text" name="fname"><br><br>
+<input type="submit" value="submit">
+
+</form>
+
+</body>
+</html>-->

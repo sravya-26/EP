@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		/*Program28:JavaScript program to demonstrate Math Function
+		document.writeln(Math.min(2,1,0)+"<br>")
+		document.writeln(Math.max(2,1,0)+"<br>")
+		document.writeln(Math.sqrt(2)+"<br>")
+		document.writeln(Math.exp(1)+"<br>")
+		document.writeln(Math.exp(2)+"<br>")
+		document.writeln(Math.pow(3,2)+"<br>") // 3^2
+		document.writeln(Math.round(6.5)+"<br>") //nearest integer value
+		document.writeln(Math.floor(5.2)+"<br>") //lowest integer value
+		document.writeln(Math.log(10)+"<br>") //base e
+		document.writeln(Math.log10(5)+"<br>") //base 10
+		document.writeln(Math.PI+"<br>") //abs value
+		document.writeln(Math.abs(-3)+"<br>") //absolute value
+		document.writeln(Math.round(Math.random()*9)+"<br>")*/
+
+		/*============================*/
+		/*Program29: Dice game
+		input1:generate random no in between 1 and 6
+		input2: read a value from user
+		if input 1 is 2 then print "Success" else "Fail"
+		var r_value = Math.round((Math.random()*99)%6+1)
+		var n = parseInt(prompt("Enter Input"))
+		if(r_value == n)
+		{
+				document.writeln("Success")
+		}
+		else
+		{
+				document.writeln("Fail")
+		}
+		//document.writeln(r_value)*/
+
+		/*===============================*/
+		/*Program30: Stack Operations*/
+		/*var a = new Array(10,20,30,40,50) //static array with integer values
+		var a = new Array("klu","klef","kl","covid")
+		var b = new Array()
+		var size = parseInt(prompt("Enter Array Size"));
+		for(i=0;i<size;i++)
+		{
+			b[i] = prompt("Enter value")
+		}
+		for(i=0;i<b.length;i++)
+		{
+			document.writeln(b[i]+"<br>")
+		}*/
+
+		var a = new Array()
+		var size = parseInt(prompt("Enter Array Size"))
+		for(i=0;i<size;i++)
+		{
+			a[i] = prompt("Enter value")
+		}
+		document.writeln(a)
+
+		document.writeln("<br>PUSH OPERATION<br>")
+		a.push("covid19")
+		document.writeln(a)
+
+		document.writeln("<br>POP OPERATION<br>")
+		a.pop()
+
+		document.writeln(a)
+		document.writeln("<br>")
+		document.writeln(a.length)
+
+		a.sort()
+		document.writeln("<br>SORT OPERATION<br>")
+		document.writeln(a)
+
+		a.reverse()
+		document.writeln("<br>REVERSE OPERATION<br>")
+		document.writeln(a)
+	</script>
+</head>
+</html>
